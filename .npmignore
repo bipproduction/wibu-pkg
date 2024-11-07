@@ -1,0 +1,17 @@
+# Jangan sertakan file berikut di npm package
+src/
+.vscode/
+.idea/
+*.log
+*.tsbuildinfo
+.gitignore
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Include the necessary files only
+!.npmignore
+!dist/
+!README.md
+!LICENSE
+!package.json

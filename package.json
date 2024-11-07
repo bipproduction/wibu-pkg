@@ -1,0 +1,41 @@
+{
+    "name": "wibu-pkg",
+    "version": "1.0.0",
+    "description": "Simple Wibu Package Template",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "rm -rf dist && tsc && npx standard-version --yes",
+        "clean": "rm -rf dist",
+        "test": "echo 'Add your test script here'",
+        "dev": "tsc --watch",
+        "lint": "eslint src/**/*.ts",
+        "format": "prettier --write src"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yourusername/wibu-pkg.git"
+    },
+    "keywords": [
+        "typescript",
+        "utilities",
+        "package"
+    ],
+    "author": "Malik Kurosaki",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "eslint": "^8",
+        "eslint-config-next": "15.0.1",
+        "postcss": "^8.4.47",
+        "postcss-preset-mantine": "^1.17.0",
+        "postcss-simple-vars": "^7.0.1",
+        "tailwindcss": "^3.4.1",
+        "typescript": "^5"
+    },
+    "dependencies": {
+        "@supabase/supabase-js": "^2.46.1"
+    }
+}
