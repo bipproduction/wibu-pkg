@@ -2,6 +2,7 @@
 import { Button, Stack, Title } from "@mantine/core";
 import { useEffect, useState } from "react";
 
+
 export function StreamPermissionProvider() {
   const [permissionGranted, setPermissionGranted] = useState<boolean | null>(null);
 
