@@ -1,6 +1,6 @@
 {
     "name": "wibu-pkg",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Simple Wibu Package Template",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -38,6 +38,8 @@
     "dependencies": {
         "@mantine/core": "^7.13.5",
         "@mantine/hooks": "^7.13.5",
-        "@supabase/supabase-js": "^2.46.1"
+        "@supabase/supabase-js": "^2.46.1",
+        "@types/lodash": "^4.17.13",
+        "loadsh": "^0.0.4"
     }
 }
