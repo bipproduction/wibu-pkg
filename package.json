@@ -1,6 +1,6 @@
 {
     "name": "wibu-pkg",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "Simple Wibu Package Template",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
