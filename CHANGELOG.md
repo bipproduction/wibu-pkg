@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.0.22](https://github.com/yourusername/wibu-pkg/compare/v1.0.21...v1.0.22) (2024-11-13)
+
 ## [1.0.21](https://github.com/yourusername/wibu-pkg/compare/v1.0.20...v1.0.21) (2024-11-13)
 
 ## [1.0.20](https://github.com/yourusername/wibu-pkg/compare/v1.0.19...v1.0.20) (2024-11-13)
