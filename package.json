@@ -1,16 +1,17 @@
 {
     "name": "wibu-pkg",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "description": "Simple Wibu Package Template",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "scripts": {
-        "build": "rm -rf dist && tsc && npx standard-version --yes",
+        "build": "rm -rf dist && tsc && commit-and-tag-version -- --prerelease",
         "clean": "rm -rf dist",
         "test": "echo 'Add your test script here'",
         "dev": "tsc --watch",
         "lint": "eslint src/**/*.ts",
-        "format": "prettier --write src"
+        "format": "prettier --write src",
+        "publish": "yarn build && npm publish --access public"
     },
     "repository": {
         "type": "git",
@@ -27,6 +28,7 @@
         "@types/node": "^20",
         "@types/react": "^18",
         "@types/react-dom": "^18",
+        "commit-and-tag-version": "^12.5.0",
         "eslint": "^8",
         "eslint-config-next": "15.0.1",
         "postcss": "^8.4.47",
@@ -40,7 +42,9 @@
         "@mantine/hooks": "^7.13.5",
         "@supabase/supabase-js": "^2.46.1",
         "@types/lodash": "^4.17.13",
+        "@types/web-push": "^3.6.4",
         "colors": "^1.4.0",
-        "loadsh": "^0.0.4"
+        "loadsh": "^0.0.4",
+        "web-push": "^3.6.7"
     }
 }
