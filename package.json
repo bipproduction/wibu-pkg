@@ -1,6 +1,6 @@
 {
     "name": "wibu-pkg",
-    "version": "1.0.17",
+    "version": "1.0.18",
     "description": "Simple Wibu Package Template",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -45,7 +45,9 @@
         "@types/web-push": "^3.6.4",
         "colors": "^1.4.0",
         "loadsh": "^0.0.4",
+        "net": "^1.0.2",
         "peerjs": "^1.5.4",
+        "tls": "^0.0.1",
         "uuid": "^11.0.3",
         "web-push": "^3.6.7"
     }
