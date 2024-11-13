@@ -1,6 +1,6 @@
 {
     "name": "wibu-pkg",
-    "version": "1.0.15",
+    "version": "1.0.16",
     "description": "Simple Wibu Package Template",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -10,8 +10,7 @@
         "test": "echo 'Add your test script here'",
         "dev": "tsc --watch",
         "lint": "eslint src/**/*.ts",
-        "format": "prettier --write src",
-        "publish": "rm -rf dist && tsc && commit-and-tag-version -- --prerelease && npm publish"
+        "format": "prettier --write src"
     },
     "repository": {
         "type": "git",
