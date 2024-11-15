@@ -2,7 +2,7 @@ import _ from "lodash";
 import "colors";
 export const devLog =
   (log: boolean = false) =>
-  (text: string, variant: "info" | "warn" | "error" = "info") => {
+  (text: string, variant: "info" | "warn" | "error" = "info", ...args: any[]) => {
     if (log) {
       const stack = new Error().stack;
       const lineInfo = stack?.split("\n")[2]; // Ambil baris ke-2 dari stack trace
@@ -12,7 +12,8 @@ export const devLog =
         variant === "info" ? "green" : variant === "warn" ? "yellow" : "red";
       console.log(
         `[${variant}]`.green,
-        `[${lineNumber}] ==> ${text}`[color]
+        `[${lineNumber}] ==> ${text}`[color],
+        ...args
       );
     }
   };
